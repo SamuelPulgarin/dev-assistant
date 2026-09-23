@@ -55,15 +55,15 @@ export type ModelProvider = 'openai' | 'anthropic';
 
 export interface AppConfig
 {
-    Provider: ModelProvider;
-    anthropicApiKey?: string;
-    openaiApiKey?: string;
-    anthropicModel?: string;
-    openaiModel?: string;
-    openaiEmbeddingModel?: string;
+    provider: ModelProvider;
+    anthropicApiKey: string;
+    openaiApiKey: string;
+    anthropicModel: string;
+    openaiModel: string;
+    openaiEmbeddingModel: string;
     docsPath: string;
     dbPath: string;
-    rangTopK: number;
+    ragTopK: number;
 }
 
 export interface AgentResponse {
